@@ -15,4 +15,4 @@ Now you can use the `run` options of Docker/Shifter to perform the required step
 1. `makeblastdb -in zebrafish.1.protein.faa -dbtype prot`
 1. `blastp -query P04156.fasta -db zebrafish.1.protein.faa -out results.txt`
 
-Note: when using Docker, don't forget to mount your host directory with the `-v` flag, or your will have input/output file errors!
+Note: when using Docker, don't forget to use the flags `-v` and `-w` to mount your host directory and use it as the working directory; failure to do so will result in input/output file errors.

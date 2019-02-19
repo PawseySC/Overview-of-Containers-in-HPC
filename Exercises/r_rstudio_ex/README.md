@@ -13,14 +13,18 @@ For the curious ones, the `Dockerfile` used to build the container is provided i
 * bskjerven/oz_sc:latest
   
 Now use the `run` options of Docker/Shifter to execute
-* `Rscript SC_Rscript.r`
+
+`Rscript SC_Rscript.r`
+
+Note: when using Docker, don't forget to use the flags `-v` and `-w` to mount your host directory and use it as the working directory; failure to do so will result in input/output file errors.
 
 
 ## Web server
 
 Finally, you can give a try with launching a local RStudio webserver through a container (Docker only).  
 This is the required syntax: 
-* `docker run --rm -d -p 8787:8787 -e PASSWORD=yourfavouritepassword -v $(pwd):/home/rstudio/data --name rstudio bskjerven/oz_sc:latest`
+
+`docker run --rm -d -p 8787:8787 -e PASSWORD=yourfavouritepassword -v $(pwd):/home/rstudio/data --name rstudio bskjerven/oz_sc:latest`
 
 Open a web browser and go to
 * http://localhost:8787
@@ -28,4 +32,5 @@ Open a web browser and go to
 Have fun with RStudio! For instance you can try and re-run the sample analysis from in there.
 
 When you are done, stop the container with 
-* `docker stop rstudio`
+
+`docker stop rstudio`
