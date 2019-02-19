@@ -1,4 +1,4 @@
-# Blast
+# BLAST
 
 Note on Shifter: we recommend to perform the preparation steps (download, pull) on the login node, 
 and use a job script just for the actual compute part.
