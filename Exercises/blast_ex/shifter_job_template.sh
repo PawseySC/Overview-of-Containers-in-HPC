@@ -5,7 +5,7 @@
 #SBATCH --account=onlinecourse
 #SBATCH --reservation=onlinecourse
 #SBATCH --job-name=Container_BLAST
-#SBATCH --time=00:10:00
+#SBATCH --time=00:05:00
 #SBATCH --export=NONE
 
 module load shifter
