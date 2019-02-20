@@ -3,8 +3,13 @@ Exercises for the webinar on containers by Pawsey Supercomputing Centre.
 
 Intro
 -----
-This repository contains a set of workable examples on how to use containers to run applications.  
-Each example can be run both with Docker (e.g. on your personal computer or on the cloud) and Shifter (on Pawsey SC systems).  
+This repository contains a set of workable examples on how to use containers to run applications:
+* BLAST (bioinformatics)
+* Gromacs (molecular dynamics)
+* Tensorflow CPU/GPU (machine learning)
+* R/RStudio
+
+Each example can be run both with Docker (e.g. on your personal computer or on the cloud) and Shifter (on Pawsey HPC systems).  
 Some examples (Tensorflow-GPU, Gromacs) require a computer with an Nvidia GPU.
 
 Structure
