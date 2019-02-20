@@ -4,6 +4,10 @@ __Notes:__ To run this example you will need a GPU enabled computer with `nvidia
 You will also need to register on https://ngc.nvidia.com and then follow the instructions to generate a API key. 
 This information will be required when executing the `pull` command.
 
+Note on Shifter: we recommend to perform the preparation steps (download, pull) on the login node, 
+and use a job script just for the actual compute part.
+
+
 Let us run a molecular dynamics toy simulation, using a Gromacs container as provided in the Nvidia GPU Cloud.  
 
 First, download and uncompress some sample input files from the Gromacs website (hint: you can use the `wget` and `tar` tools):
