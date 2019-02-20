@@ -3,7 +3,7 @@
 module load shifter
 
 # download sample input files
-wget -c ftp://ftp.gromacs.org/pub/benchmarks/water_GMX50_bare.tar.gz
+wget ftp://ftp.gromacs.org/pub/benchmarks/water_GMX50_bare.tar.gz
 tar xzf water_GMX50_bare.tar.gz
 cp water-cut1.0_GMX50_bare/1536/* .
 

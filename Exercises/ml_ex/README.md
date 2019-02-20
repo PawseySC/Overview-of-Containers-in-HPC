@@ -33,12 +33,10 @@ Note: when using Docker, don't forget to use the flags `-v` and `-w` to mount yo
 
 ## Running on GPUs
 
-__Notes:__ To run this example you will need a GPU enable computer with `nvidia-docker`, or otherwise access to the _Zeus_ system at Pawsey.  
-You will also need to register on https://ngc.nvidia.com and then follow the instructions to generate a API key. 
-This information will be required when executing the `pull` command.
+__Note:__ To run this example you will need a GPU enabled computer with `nvidia-docker`, or otherwise access to the _Zeus_ system at Pawsey.  
 
 It's the time to `pull` the GPU version of the Tensorflow container:
 * tensorflow/tensorflow:1.12.0-gpu
 
 You can now run the same sample input as above with this GPU enabled container.  
-With SLURM on _Zeus_, you will need to modify the SBATCH directives to use the _gpuq_ queue and request GPU resources (see dedidcated template).
+With SLURM on _Zeus_, you will need extra SBATCH directives to use the _gpuq_ queue and request GPU resources (see dedidcated template).
