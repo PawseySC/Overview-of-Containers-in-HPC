@@ -3,7 +3,7 @@
 #SBATCH --nodes=1
 #SBATCH --ntasks=1
 #SBATCH --account=onlinecourse
-#SBATCH --reservation=onlinecourse
+#SBATCH --reservation=courseq
 #SBATCH --job-name=Container_BLAST
 #SBATCH --time=00:05:00
 #SBATCH --export=NONE
