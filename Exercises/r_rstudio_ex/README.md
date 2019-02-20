@@ -16,7 +16,10 @@ Now, `pull` the `rstudio` container provided by the _Rocker Project_ on DockerHu
 * rocker/rstudio:3.5.1
 
 You can now run `readings-06.R` through container with the `run` options of Docker/Shifter:
+
 `Rscript readings-06.R --mean data/inflammation-*.csv`
+
+Note: when using Docker, don't forget to use the flags `-v` and `-w` to mount your host directory and use it as the working directory; failure to do so will result in input/output file errors.
 
 
 ## Bioinformatics with R: single cell 
