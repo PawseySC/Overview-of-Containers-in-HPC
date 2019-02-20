@@ -4,8 +4,8 @@
 #SBATCH --ntasks=1
 #SBATCH --account=onlinecourse
 #SBATCH --reservation=courseq
-#SBATCH --job-name=Container_R
-#SBATCH --time=00:05:00
+#SBATCH --job-name=Container_R_SC
+#SBATCH --time=03:00:00
 #SBATCH --export=NONE
 
 module load shifter
