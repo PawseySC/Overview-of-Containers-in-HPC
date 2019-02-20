@@ -11,4 +11,4 @@ wget --no-check-certificate https://raw.githubusercontent.com/tensorflow/models/
 sed -i 's/NUM_EPOCHS *=.*/NUM_EPOCHS = 1/' convolutional.py
 
 # pull container
-sg $PAWSEY_PROJECT -c 'shifter pull tensorflow/tensorflow'
+sg $PAWSEY_PROJECT -c 'shifter pull tensorflow/tensorflow:1.12.0'

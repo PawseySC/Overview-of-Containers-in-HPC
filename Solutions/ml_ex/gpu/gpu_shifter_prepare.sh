@@ -1,4 +1,6 @@
-#!/bin/bash
+#!/bin/bash --login
+
+module load shifter
 
 # download tutorial files from tensorflow/models on github
 wget --no-check-certificate https://raw.githubusercontent.com/tensorflow/models/master/tutorials/image/mnist/BUILD 
@@ -9,7 +11,4 @@ wget --no-check-certificate https://raw.githubusercontent.com/tensorflow/models/
 sed -i 's/NUM_EPOCHS *=.*/NUM_EPOCHS = 1/' convolutional.py
 
 # pull container
-docker pull tensorflow/tensorflow:1.12.0
-
-# run the Tensorflow training
-docker run --rm -v `pwd`:/data -w /data tensorflow/tensorflow:1.12.0 python convolutional.py
+sg $PAWSEY_PROJECT -c 'shifter pull tensorflow/tensorflow:1.12.0-gpu'
