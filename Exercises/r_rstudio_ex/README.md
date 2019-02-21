@@ -56,5 +56,5 @@ When you are done, stop the container with
 
 __Notes__ on the flags for RStudio
 * `-d` runs the container in daemon (i.e. background) mode
-* `-p` maps communication ports between host and containers; in this case one is required to access the container through a web browser
-* `-e` sets environment variables inside the container
+* `-p` maps communication ports between host and container; in this case an open port is required to access the container through a web browser
+* `-e` sets an environment variable inside the container
