@@ -53,3 +53,8 @@ Have fun with RStudio! For instance you can try and re-run the analyses above fr
 When you are done, stop the container with 
 
 `docker stop rstudio`
+
+__Notes__ on the flags for RStudio
+* `-d` runs the container in daemon (i.e. background) mode
+* `-p` maps communication ports between host and containers; in this case one is required to access the container through a web browser
+* `-e` sets environment variables inside the container
